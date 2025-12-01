@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    fetch('https://demo-api.tutturu.workers.dev/')
+      .then(r => r.json())
+      .then(d => location.href = d.url);
+  </script>
+</head>
+<body>
+</body>
+</html>
